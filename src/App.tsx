@@ -48,8 +48,8 @@ import Keypad from './components/KeypadModules'
 const App: React.FC = () => {
   return (
     <div className="containers">
-        <Keypad/>
-        <div className="box"></div>
+      <Keypad/>
+      <div className="box"></div>
         <div className="box"></div>
         <div className="box"></div>
         <div className="box"></div>

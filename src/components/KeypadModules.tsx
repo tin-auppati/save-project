@@ -86,7 +86,6 @@ const KeypadModules: React.FC = () => {
      <div className="game-container">
       <span className={`game-container_status-circle ${status}`}></span>
       <div className="container">
-        <h2>Keypad Game</h2>
         <div className="keypad">
           {initialKeypadSymbols.map((symbol, index) => (
             <button
@@ -100,10 +99,9 @@ const KeypadModules: React.FC = () => {
           ))}
         </div>
         <div className="output">
-          <h3>Selected Order:</h3>
-          <div>{clickedSymbols.join(' ')}</div>
-          {status === 'correct' && <div style={{ color: 'green' }}>Bomb defuse!!! nice guy</div>}
-          {status === 'error' && <div style={{ color: 'red' }}>HaHa noob!!!. Try Again!</div>}
+          
+          {status === 'correct' && <div style={{ color: 'green' }}></div>}
+          {status === 'error' && <div style={{ color: 'red' }}></div>}
         </div>
       </div>
     </div>
